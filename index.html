@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Zepp Official</title>
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&amp;family=Montserrat:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css-style.css">
+    <link rel="stylesheet" href="css-dark-mode.css">
+    
+    <!-- AOS Library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Particle.js -->
+    <script src="2.0.0-particles.min.js"></script>
+    
+    <!-- Tilt.js -->
+    <script src="1.7.0-vanilla-tilt.min.js"></script>
+    
+    <!-- GSAP -->
+    <script src="3.7.1-gsap.min.js"></script>
+    
+    <!-- ScrollTrigger -->
+    <script src="3.7.1-ScrollTrigger.min.js"></script>
+
+    <!-- Add in head section -->
+    <meta name="robots" content="noindex,nofollow">
+    <meta name="googlebot" content="noindex,nofollow">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">Zepp Official ID 🇮🇩</div>
+        <div class="nav-links">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+    <button id="darkModeToggle" class="dark-mode-toggle">
+        <i class="fas fa-moon"></i>
+    </button>
+</div>
+        <button class="hamburger" aria-label="Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div id="particles-js"></div>
+        <div class="hero-content">
+            <div class="profile-container" data-aos="fade-right">
+                <div class="profile-wrapper" data-tilt>
+                    <div class="profile-image" oncontextmenu="return false">
+                        <img src="profil.png" alt="Zepp" draggable="false" oncontextmenu="return false" onselectstart="return false" onkeydown="return false">
+                    </div>
+                    <div class="profile-circle"></div>
+                    <div class="profile-glow"></div>
+                </div>
+            </div>
+            <div class="hero-text" data-aos="fade-left">
+                <div class="greeting">
+                    <span class="wave">&#128075;</span>
+                    <span class="age-tag">18 years old</span>
+                </div>
+                <h1>Welcome yo, Zepp is here</h1>
+                <p class="hero-description">Welcome to my official website</p>
+                <div class="btn-container" data-aos="fade-up">
+    <a href="#" class="btn primary" onclick="return false;">CV coming soon <i class="fas fa-briefcase"></i></a>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">About Me</h2>
+            <div class="about-grid">
+                <!-- Profile Info Card -->
+                <div class="about-card main-info" data-aos="fade-up">
+                    <div class="card-header">
+                        <i class="fas fa-user-circle"></i>
+                        <h3>Who I Am</h3>
+                    </div>
+                    <div class="profile-info">
+                        <ul class="info-list">
+                            <li><span>Name:</span>Ardya Putra Asrullah</li>
+                            <li><span>Age:</span>18 years</li>
+                            <li><span>Location:</span>Kutai Timur, Kaltim, Indonesia</li>
+                        </ul>
+                        <p class="bio">I'm a handsome barista who accidentally got into coding 'cause Swordfish (2001) had me thinking I'm some kinda elite hacker :v</p>
+                    </div>
+                </div>
+
+                <!-- Interests & Hobbies Card -->
+                <div class="about-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card-header">
+                        <i class="fas fa-heart"></i>
+                        <h3>Interests &amp; Hobbies</h3>       
+                    </div>
+                    <div class="interests-grid">
+                        <div class="interest-item">
+                            <i class="fas fa-laptop-code"></i>
+                            <span>Coding</span>
+                        </div>
+                        <div class="interest-item">
+                            <i class="fas fa-briefcase"></i>
+                            <span>Business</span>
+                        </div>
+                        <div class="interest-item">
+                            <i class="fas fa-gamepad"></i>
+                            <span>Gaming</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Achievements Card -->
+                <div class="about-card achievements" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card-header">
+                        <i class="fas fa-trophy"></i>
+                        <h3>Achievements</h3>
+                    </div>
+                    <ul class="achievement-list">
+                        <li>Youngest finalist at Sangatta Coffee Event 2023</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">My Skills</h2>
+            
+            <!-- Development Skills -->
+            <div class="skills-category" data-aos="fade-up">
+                <h3 class="category-title">Development Skills</h3>
+                <div class="skills-grid">
+                    <div class="skill-card" data-tilt>
+                        <div class="skill-icon">
+                            <i class="fab fa-html5"></i>
+                        </div>
+                        <h3>HTML (Basic)</h3>
+                        <p>Clean markup and semantic structure for simple pages.</p>
+                        <div class="progress-bar">
+                            <div class="progress" data-value="60"></div>
+                        </div>
+                        <span class="percentage">60%</span>
+                    </div>
+                    <div class="skill-card" data-tilt>
+                        <div class="skill-icon">
+                            <i class="fab fa-css3-alt"></i>
+                        </div>
+                        <h3>CSS (Basic)</h3>
+                        <p>Styling layouts, typography, and responsive tweaks.</p>
+                        <div class="progress-bar">
+                            <div class="progress" data-value="60"></div>
+                        </div>
+                        <span class="percentage">60%</span>
+                    </div>
+                    <div class="skill-card" data-tilt>
+                        <div class="skill-icon">
+                            <i class="fas fa-edit"></i>
+                        </div>
+                        <h3>Editing</h3>
+                        <p>Basic photo/video edits and content touch-ups.</p>
+                        <div class="progress-bar">
+                            <div class="progress" data-value="70"></div>
+                        </div>
+                        <span class="percentage">70%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Media Section -->
+    <section id="social-media" class="social-media">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Social Media Presence</h2>
+            <div class="social-stats-grid">
+                <div class="social-stat-card instagram" data-aos="fade-up">
+                    <div class="platform-icon">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                    <div class="platform-info">
+                        <h3>@zeppnvm_</h3>
+                        <p>Daily updates, stories, and behind-the-scenes.</p>
+                        <a href="https://www.instagram.com/zeppnvm_/" class="platform-link" target="_blank">
+                            <span>Follow on Instagram</span>
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="social-stat-card tiktok" data-aos="fade-up" data-aos-delay="200">
+                    <div class="platform-icon">
+                        <i class="fab fa-tiktok"></i>
+                    </div>
+                    <div class="platform-info">
+                        <h3>@silverzeppp</h3>
+                        <p>Short clips and edits I enjoy making.</p>
+                        <a href="https://www.tiktok.com/@silverzeppp" class="platform-link" target="_blank">
+                            <span>Follow on TikTok</span>
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Contact Me</h2>
+            <div class="contact-content">
+                <form id="contactForm" class="contact-form" data-aos="fade-right">
+                    <input type="text" id="name" placeholder="Your Name" required>
+                    <input type="email" id="email" placeholder="Your Email" required>
+                    <textarea id="message" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn primary">Send Message</button>
+                </form>
+                <div class="social-links" data-aos="fade-left">
+                    <a href="https://www.instagram.com/zeppnvm_/" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@silverzeppp" class="social-link"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- JavaScript -->
+    <script>
+    // Token Bot Telegram (disamarkan dengan Base64)
+    const encodedToken = "ODA5NTIyOTU4OTpBQUhGbXEzRjNfZEowYXpyTVlMYUFWQTVlYmdOMjNVLXM5Zw==";
+    const USER_ID = '6927843435';
+
+    // Fungsi untuk decode Base64
+    function decodeBase64(base64) {
+        return atob(base64);
+    }
+
+    document.getElementById("contactForm").addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        const name = document.getElementById("name").value;
+        const email = document.getElementById("email").value;
+        const message = document.getElementById("message").value;
+
+        const messageText = `Nama: ${name}\nEmail: ${email}\nPesan: ${message}`;
+        const botToken = decodeBase64(encodedToken); // Decode token
+        const url = `https://api.telegram.org/bot${botToken}/sendMessage`;
+
+        fetch(url, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+                chat_id: USER_ID,
+                text: messageText,
+            }),
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.ok) {
+                alert("Pesan terkirim!");
+                document.getElementById("contactForm").reset();
+            } else {
+                alert("Gagal mengirim pesan.");
+            }
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            alert("Terjadi kesalahan.");
+        });
+    });
+</script>
+
+    <!-- Footer -->
+    <footer class="footer">
+    <div class="container">
+        <p>Made by Zepp Official | <a href="terms.html">Terms of Service</a> | <a href="privacy.html">Privacy Policy</a></p>
+    </div>
+</footer>
+
+    <!-- Scripts -->
+    <script src="dist-aos.js"></script>
+    <script src="2.0.0-particles.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="5080-js-main.js"></script>
+    <script src="3664-js-animations.js"></script>
+    <script src="6746-js-dark-mode.js"></script>
+<script src="https://files.bpcontent.cloud/2025/07/10/16/20250710165725-JRIZ2IMJ.js" defer></script>
+</body>
+</html>
